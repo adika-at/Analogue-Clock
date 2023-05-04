@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+img {
+    width: 100px;
+    top: 48px;
+    left:50%;
+    position: absolute;
+    align-items: center;
+    transform: translate(-50%);
+    z-index: 1;
+    
+    
+}
+
+.clock{
+    background-color: lightgray;
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    border: 5px solid darkgray;
+    box-shadow: 1px 2px 5px   rgba(0, 0, 0, .7);
+    position: relative;
+
+}
+.numbers div{
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    position: absolute;
+    font-size: 20px;
+}
+.twelve{
+    top: 6px;
+    left: 50%;
+    align-items: center;
+    transform: translate(-50%);
+}
+
+.three{
+    right: 6px;
+    bottom: 190px;
+    align-items: center;
+    position: absolute;
+    transform: translate(-50%);
+}
+
+.six{
+    bottom: 6px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+}
+.nine{
+    left: 6px;
+    align-items: center;
+    position: absolute;
+    bottom: 190px;
+    transform: translate(50%);
+
+}
+
+.arrows{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.arrows::before{
+    content: "";
+    height: 6%;
+    width: 6%;
+    background-color: green;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 3;
+}
+
+.arrows div{
+    background-color: white;
+    width: 8px;
+    height: 12vh;
+    bottom: 50%;
+    position: absolute;
+    transform-origin: bottom center;
+    z-index: 2;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 1px 1px 1px rgba(168, 151, 151, 0.6);
+    transform: rotate(45deg);
+    
+}
+.arrows .hour{
+    width: 8px;
+    height: 15vh;
+    transform: rotate(300deg);
+    box-shadow: 1px 1px 1px 1px rgba(168, 151, 151, 0.6);
+
+
+}
+.arrows .second{
+    width: 8px;
+    height: 20vh;
+    transform: rotate(320deg);
+    background-color: brown;
+    opacity: 0.7;
+    box-shadow: 1px 1px 1px 1px rgba(168, 151, 151, 0.6);
+}
